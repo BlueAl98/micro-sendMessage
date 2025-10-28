@@ -22,6 +22,6 @@ public class EmailController {
 
     @PostMapping
     public ApiResponse<EmailRequest> sendEmail(@Valid @RequestBody EmailRequest emailRequest) {
-            return emailService.sendEmail(emailRequest);
+        return emailService.sendEmail(emailRequest);
     }
 }
